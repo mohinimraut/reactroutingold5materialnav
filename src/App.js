@@ -1,27 +1,9 @@
-
-// import Header from './Header';
-// function App() {
-//   return (
-//     <div>
-//      <Header/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
-
 import React from 'react'
 import Header from './Header';
 import {
   BrowserRouter as Router,
- 
   Switch,
   Route,
-
-
 } from "react-router-dom";
 
 import Products from './Products';
@@ -33,37 +15,23 @@ import SignUP from './SignUP'
 function App() {
   return (
     <>
-     <Router>
-<Header />
-
-<Switch>
- 
-  <Route path="/aboutus" component={AboutUS}>
-    
-  </Route>
-  <Route path="/contactus" component={ContactUS}>
-
-  </Route>
-
-  
-  <Route path="/services" component={Services}>
-
-  </Route>
-  
-  <Route path="/products" component={Products}>
-
-  </Route>
-
-  <Route path="/signup" component={SignUP}>
-
-  </Route>
-
-  <Route path="/login" component={Login}>
-
-</Route>
-</Switch>
-</Router>
-
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/aboutus" component={AboutUS}>
+          </Route>
+          <Route path="/contactus" component={ContactUS}>
+          </Route>
+          <Route path="/services" component={Services}>
+          </Route>
+          <Route path="/products" component={Products}>
+          </Route>
+          <Route path="/signup" component={SignUP}>
+          </Route>
+          <Route path="/login" component={Login}>
+          </Route>
+        </Switch>
+      </Router>
     </>
   )
 }
